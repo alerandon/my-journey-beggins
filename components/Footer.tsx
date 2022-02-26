@@ -1,4 +1,4 @@
-import actualDate from '../helpers/utils';
+import actualDate from '../helpers/Utils';
 
 export default function Footer() {
     return (
