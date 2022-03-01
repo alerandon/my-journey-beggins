@@ -1,8 +1,13 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { classNames } from '../helpers/Utils';
 
 export default function Navbar() {
+    const router = useRouter();
+
     return (
         <Disclosure as="nav" className="bg-white">
             {({ open }) => (
@@ -15,27 +20,54 @@ export default function Navbar() {
                                 </div>
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                                    <a href="#" className="text-blue-500 font-bold inline-flex items-center text-sm">
-                                        home
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="text-gray-700 hover:border-gray-300 hover:text-gray-900 inline-flex items-center text-sm"
-                                    >
-                                        sabbatical year
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="text-gray-700 hover:border-gray-300 hover:text-gray-900 inline-flex items-center text-sm"
-                                    >
-                                        studies
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="text-gray-700 hover:border-gray-300 hover:text-gray-900 inline-flex items-center text-sm"
-                                    >
-                                        now a professional
-                                    </a>
+                                    <Link href="/">
+                                        <a
+                                            className={classNames(
+                                                router.pathname === '/'
+                                                    ? 'text-blue-600 font-semibold'
+                                                    : 'text-gray-700 hover:text-blue-600',
+                                                'inline-flex items-center text-sm',
+                                            )}
+                                        >
+                                            home
+                                        </a>
+                                    </Link>
+                                    <Link href="/sabbatical-year">
+                                        <a
+                                            className={classNames(
+                                                router.pathname === '/sabbatical-year'
+                                                    ? 'text-blue-600 font-semibold'
+                                                    : 'text-gray-700 hover:text-blue-600',
+                                                'inline-flex items-center text-sm',
+                                            )}
+                                        >
+                                            sabbatical year
+                                        </a>
+                                    </Link>
+                                    <Link href="/studies">
+                                        <a
+                                            className={classNames(
+                                                router.pathname === '/studies'
+                                                    ? 'text-blue-600 font-semibold'
+                                                    : 'text-gray-700 hover:text-blue-600',
+                                                'inline-flex items-center text-sm',
+                                            )}
+                                        >
+                                            studies
+                                        </a>
+                                    </Link>
+                                    <Link href="/now-a-professional">
+                                        <a
+                                            className={classNames(
+                                                router.pathname === '/now-a-professional'
+                                                    ? 'text-blue-600 font-semibold'
+                                                    : 'text-gray-700 hover:text-blue-600',
+                                                'inline-flex items-center text-sm',
+                                            )}
+                                        >
+                                            now a professional
+                                        </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="-mr-2 flex items-center sm:hidden">

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Orientation } from '../enums/Orientation';
 
 interface ChapterResumeProps {
@@ -5,9 +6,16 @@ interface ChapterResumeProps {
     image_src: string;
     title: string;
     description: string;
+    chapter_href: string;
 }
 
-export default function ChapterResume({ orientation, image_src, title, description }: ChapterResumeProps) {
+export default function ChapterResume({
+    orientation,
+    image_src,
+    title,
+    description,
+    chapter_href,
+}: ChapterResumeProps) {
     switch (orientation) {
         case Orientation.RightToLeft:
             return (
@@ -16,9 +24,11 @@ export default function ChapterResume({ orientation, image_src, title, descripti
                         <h3 className="font-mono text-2xl lg:text-3xl text-center md:text-right">{title}</h3>
                         <p className="text-lg lg:text-xl md:text-right">{description}</p>
                         <div className="flex justify-center md:justify-end">
-                            <button className="bg-blue-600 focus:bg-blue-900 hover:bg-blue-900 py-3 px-5 text-white rounded-lg transition duration-150 ease-in-out">
-                                Read more
-                            </button>
+                            <Link href={chapter_href}>
+                                <a className="bg-blue-600 focus:bg-blue-900 hover:bg-blue-900 py-3 px-5 text-white rounded-lg transition duration-150 ease-in-out">
+                                    Read more
+                                </a>
+                            </Link>
                         </div>
                     </div>
                     <img className="w-52 md:w-72 mx-auto" src={image_src} alt=" " />
@@ -33,9 +43,11 @@ export default function ChapterResume({ orientation, image_src, title, descripti
                         <h3 className="font-mono text-2xl lg:text-3xl text-center md:text-left">{title}</h3>
                         <p className="text-lg lg:text-xl">{description}</p>
                         <div className="flex justify-center md:justify-start">
-                            <button className="bg-blue-600 focus:bg-blue-900 hover:bg-blue-900 py-3 px-5 text-white rounded-lg transition duration-150 ease-in-out">
-                                Read more
-                            </button>
+                            <Link href={chapter_href}>
+                                <a className="bg-blue-600 focus:bg-blue-900 hover:bg-blue-900 py-3 px-5 text-white rounded-lg transition duration-150 ease-in-out">
+                                    Read more
+                                </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

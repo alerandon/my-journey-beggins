@@ -44,38 +44,43 @@ export default function Home() {
                 <meta property="og:image" content="/logos/android-chrome-512x512.png" key="ogimage" />
             </Head>
             <Navbar />
-            <section className="mt-16 sm:mt-32">
+            <header className="mt-16 sm:mt-32">
                 <HeroSection />
-            </section>
-            <section className="mt-44 md:mt-52">
-                <Introduction />
-            </section>
-            <section className="mt-32">
-                <Quote />
-            </section>
-            <section className="mt-44 space-y-44">
-                <ChapterResume
-                    orientation={Orientation.LeftToRight}
-                    image_src="/images/thinking.jpg"
-                    title={resumes.sabbatical_year.title}
-                    description={resumes.sabbatical_year.description}
-                />
-                <ChapterResume
-                    orientation={Orientation.RightToLeft}
-                    image_src="/images/studying.jpg"
-                    title={resumes.studies.title}
-                    description={resumes.studies.description}
-                />
-                <ChapterResume
-                    orientation={Orientation.LeftToRight}
-                    image_src="/images/working.jpg"
-                    title={resumes.now_a_professional.title}
-                    description={resumes.now_a_professional.description}
-                />
-            </section>
-            <section className="mt-64">
-                <h2 className="font-mono text-3xl text-center">The adventure continues. Get up and go learning!</h2>
-            </section>
+            </header>
+            <main className="mt-44 md:mt-52">
+                <section>
+                    <Introduction />
+                </section>
+                <section className="mt-32">
+                    <Quote />
+                </section>
+                <section className="mt-44 space-y-44">
+                    <ChapterResume
+                        orientation={Orientation.LeftToRight}
+                        image_src="/images/thinking.jpg"
+                        title={resumes.sabbatical_year.title}
+                        description={resumes.sabbatical_year.description}
+                        chapter_href="/sabbatical-year"
+                    />
+                    <ChapterResume
+                        orientation={Orientation.RightToLeft}
+                        image_src="/images/studying.jpg"
+                        title={resumes.studies.title}
+                        description={resumes.studies.description}
+                        chapter_href="/studies"
+                    />
+                    <ChapterResume
+                        orientation={Orientation.LeftToRight}
+                        image_src="/images/working.jpg"
+                        title={resumes.now_a_professional.title}
+                        description={resumes.now_a_professional.description}
+                        chapter_href="/now-a-professional"
+                    />
+                </section>
+                <section className="mt-64">
+                    <h2 className="font-mono text-3xl text-center">The adventure continues. Get up and go learning!</h2>
+                </section>
+            </main>
             <footer className="mt-80">
                 <Footer />
             </footer>

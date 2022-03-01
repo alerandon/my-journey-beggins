@@ -4,3 +4,7 @@ export default function actualDate(): Date {
 
     return date;
 }
+
+export function classNames(...classes: string[]): string {
+    return classes.filter(Boolean).join(' ');
+}
