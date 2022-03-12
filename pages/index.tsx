@@ -45,7 +45,7 @@ export default function Home() {
             </Head>
             <Navbar />
             <header className="mt-16 sm:mt-32">
-                <HeroSection />
+                <HeroSection main_text="Hi, I'm Alejandro... and this is my journey starting to learn programming" />
             </header>
             <main className="mt-44 md:mt-52">
                 <section>
