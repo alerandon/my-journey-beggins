@@ -10,8 +10,15 @@ export default function HeroSection({ main_text, image_src }: HeroSectionProps) 
                 <div className="max-w-md md:w-1/2 md:mr-10 pt-10 md:pt-24 lg:pt-32 mx-auto">
                     <h1 className="font-mono text-2xl sm:text-3xl lg:text-4xl text-center md:text-left">{main_text}</h1>
                 </div>
-                <div className="md:w-1/2 md:flex md:justify-end">
-                    <img className="max-w-sm max-h-full mx-auto w-48 md:w-52 lg:w-64 h-auto" src={image_src} alt=" " />
+                <div className="md:w-1/2 flex justify-center">
+                    <div className="relative h-72 lg:h-96 w-min">
+                        <img
+                            className="absolute z-10 max-w-sm max-h-full left-1/3 lg:left-1/4 w-48 md:w-52 lg:w-64 pb-5"
+                            src={image_src}
+                            alt=" "
+                        />
+                        <div className="absolute z-0 w-48 md:w-52 lg:w-64 left-1/3 lg:left-1/4 mx-auto bg-gray-400 opacity-30 inset-y-0 mt-5 ml-5" />
+                    </div>
                 </div>
             </div>
         );
