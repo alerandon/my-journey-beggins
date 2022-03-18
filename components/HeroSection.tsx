@@ -13,7 +13,7 @@ export default function HeroSection({ main_text, image_src }: HeroSectionProps) 
                 <div className="md:w-1/2 lg:pl-10">
                     <div className="relative h-72 lg:h-96 w-48 md:w-52 lg:w-64 mx-auto">
                         <img className="absolute z-10 max-w-sm max-h-full w-48 lg:w-64 pb-5" src={image_src} alt=" " />
-                        <div className="absolute z-0 w-48 lg:w-64 mx-auto bg-gray-400 opacity-30 inset-y-0 mt-5 ml-5" />
+                        <div className="absolute z-0 w-48 lg:w-64 mx-auto bg-gray-400 opacity-40 inset-y-0 mt-5 ml-5" />
                     </div>
                 </div>
             </div>
