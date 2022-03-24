@@ -38,19 +38,16 @@ export default function SabbaticalYear() {
                         could not be selected, because at that time you could only enter through a selection filter
                         which chose the candidates very randomly, but why is a different story.
                     </p>
-                    <br />
                     <p>
                         After finishing the school stage it was not clear my definitive course or what was going to be
                         next, and in my family there have been plans thought that remained in the expectation of seeing
                         if they could be achieved, but at the moment of truth that was not certain.
                     </p>
-                    <br />
                     <p>
                         At the beginning I have been very attentive to do a series of procedures that were necessary for
                         the said family plans, after finishing those procedures at a dizzying pace I had nothing left to
                         do but to wait for things to happen with nothing else to do.
                     </p>
-                    <br />
                     <p>
                         Of course my brother in the midst of that has insisted me to do something, one of those things
                         has been to learn programming and make a living from it, I was reluctant against the insistence,
@@ -87,13 +84,11 @@ export default function SabbaticalYear() {
                         course), however it broadened even more my skills of what I could invent in code, CSS itself has
                         been a key language for the aesthetics of web pages.
                     </p>
-                    <br />
                     <p>
                         Later we went on to learn Javascript, it was clearly the first programming language I learned in
                         these beginnings, at first there were things that I did not understand how they were done, but
                         with practice began to leave me a clear vision of how to write code.
                     </p>
-                    <br />
                     <p>
                         After learning Javascript I started to open my horizons to different programming languages,
                         mainly C language, thanks to C I have learned good basics of what a programming language is
@@ -101,7 +96,7 @@ export default function SabbaticalYear() {
                         base in programming.
                     </p>
                 </ChapterText>
-                <div className="flex flex-row-reverse mt-32">
+                <div className="flex flex-row-reverse mt-20">
                     <Link href="/studies">
                         <a className="bg-blue-500 focus:bg-blue-700 hover:bg-blue-700 py-3 px-6 text-white rounded-lg transition duration-150 ease-in-out">
                             Next {'>>'}

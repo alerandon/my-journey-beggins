@@ -3,5 +3,5 @@ interface ChapterTextProps {
 }
 
 export default function ChapterText({ children }: ChapterTextProps) {
-    return <section className="md:text-lg lg:text-xl leading-relaxed">{children}</section>;
+    return <section className="md:text-lg lg:text-xl leading-relaxed space-y-8">{children}</section>;
 }
