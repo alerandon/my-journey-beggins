@@ -44,10 +44,10 @@ export default function Home() {
                 <meta property="og:image" content="/logos/android-chrome-512x512.png" key="ogimage" />
             </Head>
             <Navbar />
-            <header className="mt-16 sm:mt-32">
+            <header className="mt-16 sm:mt-40">
                 <HeroSection main_text="Hi, I'm Alejandro... and this is my journey starting to learn programming" />
             </header>
-            <main className="mt-44 md:mt-52">
+            <main className="mt-44 md:mt-56">
                 <section>
                     <Introduction />
                 </section>
