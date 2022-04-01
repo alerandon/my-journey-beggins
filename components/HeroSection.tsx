@@ -1,26 +1,37 @@
-import { gsap } from 'gsap';
 import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface HeroSectionProps {
     main_text: string;
     image_src?: string;
 }
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function HeroSection({ main_text, image_src }: HeroSectionProps) {
     useEffect(() => {
-        const tl = gsap.timeline();
-
-        tl.from('.main_text', {
+        gsap.from('.main_text', {
+            scrollTrigger: {
+                trigger: '.main_text',
+                toggleActions: 'play none restart none',
+            },
             y: 50,
             opacity: 0,
             duration: 1,
             ease: 'power4.Out',
         });
-        tl.from('.hero_img', {
+        gsap.from('.hero_img', {
+            scrollTrigger: {
+                trigger: '.hero_img',
+                toggleActions: 'play reverse restart none',
+            },
             x: 70,
             opacity: 0,
             duration: 1,
-            delay: 0.2,
+            delay: 1,
             ease: 'power1.Out',
         });
     });
