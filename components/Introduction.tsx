@@ -1,8 +1,36 @@
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { useEffect } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Introduction() {
+    useEffect(() => {
+        gsap.from('.profile_img', {
+            scrollTrigger: {
+                trigger: '.profile_img',
+                toggleActions: 'restart reverse restart none',
+            },
+            opacity: 0,
+            duration: 1,
+            ease: 'expo.Out',
+        });
+        gsap.from('.intro_text', {
+            scrollTrigger: {
+                trigger: '.intro_text',
+                toggleActions: 'restart reverse restart none',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: 'power4.Out',
+        });
+    });
+
     return (
         <div className="max-w-4xl mx-auto">
-            <img className="mx-auto w-32 h-32 md:w-auto md:h-auto" src="/images/profile-photo.png" />
-            <div className="mt-10 mx-auto space-y-8 px-5">
+            <img className="profile_img mx-auto w-32 h-32 md:w-auto md:h-auto" src="/images/profile-photo.png" />
+            <div className="intro_text mt-10 mx-auto space-y-8 px-5">
                 <p className="text-lg md:text-xl text-center">
                     Today I&apos;m a skilled developer who can make tasks and features by it’s own, accomplishing the
                     pursued objectives around a project, sounds nice and it gives good expectations about it at future,

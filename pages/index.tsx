@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useEffect } from 'react';
 import ChapterResume from '../components/ChapterResume';
 import Footer from '../components/Footer';
 import HeroSection from '../components/HeroSection';
@@ -6,6 +7,10 @@ import Introduction from '../components/Introduction';
 import Navbar from '../components/Navbar';
 import Quote from '../components/Quote';
 import { Orientation } from '../enums/Orientation';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
     const resumes = {
@@ -25,6 +30,19 @@ export default function Home() {
                 'I got in contact with a group of people thanks to a friend from when I was in school, he invited me to an induction workshop of the mentioned group, they were an organization composed of a foundation that taught young people practical skills for working in international projects and a company that played the role of a technology consulting firm that offered both technology and engineering solutions for companies and cities...',
         },
     };
+
+    useEffect(() => {
+        gsap.from('.last_text', {
+            scrollTrigger: {
+                trigger: '.last_text',
+                toggleActions: 'restart reverse none reverse',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: 'power4.Out',
+        });
+    });
 
     return (
         <>
@@ -61,6 +79,7 @@ export default function Home() {
                         title={resumes.sabbatical_year.title}
                         description={resumes.sabbatical_year.description}
                         chapter_href="/sabbatical-year"
+                        chapter="sabbatical"
                     />
                     <ChapterResume
                         orientation={Orientation.RightToLeft}
@@ -68,6 +87,7 @@ export default function Home() {
                         title={resumes.studies.title}
                         description={resumes.studies.description}
                         chapter_href="/studies"
+                        chapter="studies"
                     />
                     <ChapterResume
                         orientation={Orientation.LeftToRight}
@@ -75,10 +95,13 @@ export default function Home() {
                         title={resumes.now_a_professional.title}
                         description={resumes.now_a_professional.description}
                         chapter_href="/now-a-professional"
+                        chapter="professional"
                     />
                 </section>
                 <section className="mt-64">
-                    <h2 className="font-mono text-3xl text-center">The adventure continues. Get up and go learning!</h2>
+                    <h2 className="last_text font-mono text-3xl text-center">
+                        The adventure continues. Get up and go learning!
+                    </h2>
                 </section>
             </main>
             <footer className="mt-80">
