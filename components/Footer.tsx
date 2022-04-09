@@ -35,11 +35,14 @@ export default function Footer() {
                         </Link>
                     </div>
                 </nav>
-                {/* <div className="mt-8 flex justify-center space-x-5">
-                    <a href="#" target="_blank">
-                        <img src="#"  className="w-6 h-6" />
+                <div className="mt-8 flex justify-center space-x-5">
+                    <a href="https://github.com/alerandon" target="_blank" rel="noreferrer">
+                        <img src="icons/github-white.svg" className="w-6 h-6" />
                     </a>
-                </div> */}
+                    <a href="https://www.linkedin.com/in/alejandro-randon-334647127/" target="_blank" rel="noreferrer">
+                        <img src="icons/linkedin-white.svg" className="w-6 h-6" />
+                    </a>
+                </div>
                 <div className="mt-8">
                     <p className="text-center text-sm leading-6 font-medium tracking-widest text-gray-100">
                         &copy; {actualDate().getFullYear()} Alejandro Randon. All rights reserved.

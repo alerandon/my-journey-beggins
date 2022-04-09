@@ -9,7 +9,7 @@ export default function Introduction() {
         gsap.from('.profile_img', {
             scrollTrigger: {
                 trigger: '.profile_img',
-                toggleActions: 'restart reverse restart none',
+                toggleActions: 'play none none none',
             },
             opacity: 0,
             duration: 1,
@@ -18,7 +18,7 @@ export default function Introduction() {
         gsap.from('.intro_text', {
             scrollTrigger: {
                 trigger: '.intro_text',
-                toggleActions: 'restart reverse restart none',
+                toggleActions: 'play none none none',
             },
             y: 50,
             opacity: 0,

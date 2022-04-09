@@ -33,7 +33,7 @@ export default function ChapterResume({
                     },
                     x: 50,
                     opacity: 0,
-                    duration: 1.5,
+                    duration: 1,
                     ease: 'power4.Out',
                 });
                 gsap.from('.' + chapter + '_text', {
@@ -43,8 +43,8 @@ export default function ChapterResume({
                     },
                     x: -50,
                     opacity: 0,
-                    stagger: 0.5,
-                    duration: 1.5,
+                    stagger: 0.3,
+                    duration: 1,
                     delay: 1,
                     ease: 'power4.Out',
                 });
@@ -78,7 +78,7 @@ export default function ChapterResume({
                     },
                     x: -50,
                     opacity: 0,
-                    duration: 1.5,
+                    duration: 1,
                     ease: 'power4.Out',
                 });
                 gsap.from('.' + chapter + '_text', {
@@ -88,8 +88,8 @@ export default function ChapterResume({
                     },
                     x: 50,
                     opacity: 0,
-                    stagger: 0.5,
-                    duration: 1.5,
+                    stagger: 0.3,
+                    duration: 1,
                     delay: 1,
                     ease: 'power4.Out',
                 });
