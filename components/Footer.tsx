@@ -4,7 +4,7 @@ import actualDate from '../helpers/Utils';
 export default function Footer() {
     return (
         <div className="relative h-auto overflow-x-hidden bg-blue-600">
-            <div className="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <div className="max-w-screen-xl mx-auto py-10 px-4 space-y-6 overflow-hidden sm:px-6 lg:px-8">
                 <nav className="-mx-5 -my-2 flex flex-wrap justify-center">
                     <div className="px-5 py-2">
                         <Link href="/">
@@ -35,7 +35,7 @@ export default function Footer() {
                         </Link>
                     </div>
                 </nav>
-                <div className="mt-8 flex justify-center space-x-5">
+                <div className="flex justify-center space-x-5">
                     <a href="https://github.com/alerandon" target="_blank" rel="noreferrer">
                         <img src="icons/github-white.svg" className="w-6 h-6" />
                     </a>
@@ -43,7 +43,7 @@ export default function Footer() {
                         <img src="icons/linkedin-white.svg" className="w-6 h-6" />
                     </a>
                 </div>
-                <div className="mt-8">
+                <div>
                     <p className="text-center text-sm leading-6 font-medium tracking-widest text-gray-100">
                         &copy; {actualDate().getFullYear()} Alejandro Randon. All rights reserved.
                     </p>
