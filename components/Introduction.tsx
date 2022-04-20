@@ -29,7 +29,11 @@ export default function Introduction() {
 
     return (
         <div className="max-w-4xl mx-auto">
-            <img className="profile_img mx-auto w-32 h-32 md:w-auto md:h-auto" src="/images/profile-photo.png" />
+            <img
+                className="profile_img mx-auto w-32 h-32 md:w-auto md:h-auto"
+                alt=" "
+                src="/images/profile-photo.png"
+            />
             <div className="intro_text mt-10 mx-auto space-y-8 px-5">
                 <p className="text-lg md:text-xl text-center">
                     Today I&apos;m a skilled developer who can make tasks and features by it’s own, accomplishing the

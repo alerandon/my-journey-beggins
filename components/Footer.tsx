@@ -37,10 +37,10 @@ export default function Footer() {
                 </nav>
                 <div className="flex justify-center space-x-5">
                     <a href="https://github.com/alerandon" target="_blank" rel="noreferrer">
-                        <img src="icons/github-white.svg" className="w-6 h-6" />
+                        <img src="icons/github-white.svg" alt=" " className="w-6 h-6" />
                     </a>
                     <a href="https://www.linkedin.com/in/alejandro-randon-334647127/" target="_blank" rel="noreferrer">
-                        <img src="icons/linkedin-white.svg" className="w-6 h-6" />
+                        <img src="icons/linkedin-white.svg" alt=" " className="w-6 h-6" />
                     </a>
                 </div>
                 <div>
