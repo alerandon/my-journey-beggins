@@ -68,8 +68,8 @@ export default function SabbaticalYear() {
                 <br />
                 <section className="my-8">
                     <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 lg:space-x-5 justify-center">
-                        <img className="max-w-sm mx-auto w-64 sm:w-72 lg:w-1/2 sm:w-auto" src="images/w3-before.jpg" />
-                        <img className="max-w-sm mx-auto w-64 sm:w-72 lg:w-1/2 sm:w-auto" src="images/w3-after.jpg" />
+                        <img className="max-w-sm mx-auto w-64 sm:w-72 lg:w-1/2" src="images/w3-before.jpg" alt=" " />
+                        <img className="max-w-sm mx-auto w-64 sm:w-72 lg:w-1/2" src="images/w3-after.jpg" alt=" " />
                     </div>
                     <p className="text-gray-500 text-sm text-center mt-2">w3schools in 2017 / w3schools actually</p>
                 </section>

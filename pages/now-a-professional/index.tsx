@@ -60,7 +60,7 @@ export default function NowAProfessional() {
                 <br />
                 <div className="mt-24 mb-12">
                     <p className="text-center font-mono text-2xl">and this is just the beginning...</p>
-                    <img className="mx-auto my-5" src="images/railroad.jpg" />
+                    <img className="mx-auto my-5" src="images/railroad.jpg" alt=" " />
                 </div>
                 <br />
                 <ChapterText>

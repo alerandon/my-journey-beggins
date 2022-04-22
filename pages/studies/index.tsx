@@ -51,7 +51,7 @@ export default function Studies() {
                     </p>
                 </ChapterText>
                 <br />
-                <img className="mx-auto my-5" src="images/guy-coding.jpg" />
+                <img className="mx-auto my-5" src="images/guy-coding.jpg" alt=" " />
                 <br />
                 <ChapterText>
                     <p>
