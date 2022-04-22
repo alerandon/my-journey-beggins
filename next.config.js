@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: ['tailwindui.com', 'images.unsplash.com'],
   },
+  swcMinify: false,
 }
 
 module.exports = nextConfig
