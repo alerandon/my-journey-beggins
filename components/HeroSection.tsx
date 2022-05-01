@@ -20,6 +20,7 @@ export default function HeroSection({ main_text, image_src }: HeroSectionProps) 
             opacity: 0,
             duration: 1,
             ease: 'power4.Out',
+            delay: 0.5,
         });
         gsap.from('.hero_img', {
             scrollTrigger: {
@@ -29,7 +30,7 @@ export default function HeroSection({ main_text, image_src }: HeroSectionProps) 
             x: 70,
             opacity: 0,
             duration: 1,
-            delay: 1,
+            delay: 1.5,
             ease: 'power1.Out',
         });
     });
