@@ -12,8 +12,8 @@ export default function Introduction() {
                 toggleActions: 'play none none none',
             },
             opacity: 1,
-            duration: 1,
-            delay: 0.12,
+            duration: 0.8,
+            delay: 0.1,
             ease: 'expo.Out',
         });
         gsap.to('.intro_text', {
@@ -23,9 +23,9 @@ export default function Introduction() {
             },
             y: 0,
             opacity: 1,
-            stagger: 0.5,
-            duration: 1,
-            delay: 0.12,
+            stagger: 0.4,
+            duration: 1.25,
+            delay: 0.3,
             ease: 'power4.Out',
         });
     });
