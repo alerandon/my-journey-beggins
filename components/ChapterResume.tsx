@@ -33,7 +33,7 @@ export default function ChapterResume({
                     },
                     x: 50,
                     opacity: 0,
-                    duration: 1,
+                    duration: 0.75,
                     ease: 'power4.Out',
                 });
                 gsap.from('.' + chapter + '_text', {
@@ -44,8 +44,8 @@ export default function ChapterResume({
                     x: -50,
                     opacity: 0,
                     stagger: 0.3,
-                    duration: 1,
-                    delay: 1,
+                    duration: 0.75,
+                    delay: 0.75,
                     ease: 'power4.Out',
                 });
             });
@@ -78,7 +78,7 @@ export default function ChapterResume({
                     },
                     x: -50,
                     opacity: 0,
-                    duration: 1,
+                    duration: 0.75,
                     ease: 'power4.Out',
                 });
                 gsap.from('.' + chapter + '_text', {
@@ -89,14 +89,14 @@ export default function ChapterResume({
                     x: 50,
                     opacity: 0,
                     stagger: 0.3,
-                    duration: 1,
-                    delay: 1,
+                    duration: 0.75,
+                    delay: 0.75,
                     ease: 'power4.Out',
                 });
             });
 
             return (
-                <div className={`${chapter} flex flex-col-reverse md:flex-row max-w-5xl mx-auto px-5`}>
+                <div className={`${chapter} flex flex-col md:flex-row max-w-5xl mx-auto px-5`}>
                     <img className={`${chapter}_img w-52 md:w-72 mx-auto`} src={image_src} alt=" " />
                     <div className="flex flex-col justify-center mt-10 md:mt-0 md:ml-16 max-w-lg mx-auto space-y-10">
                         <h3 className={`${chapter}_text font-mono text-2xl lg:text-3xl text-center md:text-left`}>
