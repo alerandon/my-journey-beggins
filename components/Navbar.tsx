@@ -16,7 +16,7 @@ export default function Navbar() {
                         <div className="flex justify-between sm:block">
                             <div className="flex sm:justify-between items-center">
                                 <div className="flex-shrink-0 flex items-center text-lg font-medium text-gray-500">
-                                    my journey beggins
+                                    my journey begins
                                 </div>
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}

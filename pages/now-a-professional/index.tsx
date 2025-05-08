@@ -14,9 +14,9 @@ export default function NowAProfessional() {
                 <link rel="icon" href="/logos/favicon.ico" />
 
                 <meta name="twitter:card" content="app" key="twcard" />
-                <meta name="twitter:title" content="My journey beggins" key="twtitle" />
+                <meta name="twitter:title" content="My journey begins" key="twtitle" />
 
-                <meta property="og:title" content="My journey beggins" key="ogtitle" />
+                <meta property="og:title" content="My journey begins" key="ogtitle" />
                 <meta
                     property="og:description"
                     content="Here is my story about how I started into programming."
