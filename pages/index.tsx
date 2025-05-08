@@ -35,7 +35,7 @@ export default function Home() {
         gsap.from('.last_text', {
             scrollTrigger: {
                 trigger: '.last_text',
-                toggleActions: 'restart reverse none reverse',
+                toggleActions: 'play none none none',
             },
             y: 50,
             opacity: 0,

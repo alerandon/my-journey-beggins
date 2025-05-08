@@ -29,7 +29,7 @@ export default function ChapterResume({
                 gsap.from('.' + chapter + '_img', {
                     scrollTrigger: {
                         trigger: '.' + chapter,
-                        toggleActions: 'restart reverse restart none',
+                        toggleActions: 'play none none none',
                     },
                     x: 50,
                     opacity: 0,
@@ -39,7 +39,7 @@ export default function ChapterResume({
                 gsap.from('.' + chapter + '_text', {
                     scrollTrigger: {
                         trigger: '.' + chapter,
-                        toggleActions: 'restart reverse restart none',
+                        toggleActions: 'play none none none',
                     },
                     x: -50,
                     opacity: 0,
@@ -74,7 +74,7 @@ export default function ChapterResume({
                 gsap.from('.' + chapter + '_img', {
                     scrollTrigger: {
                         trigger: '.' + chapter,
-                        toggleActions: 'restart reverse restart none',
+                        toggleActions: 'play none none none',
                     },
                     x: -50,
                     opacity: 0,
@@ -84,7 +84,7 @@ export default function ChapterResume({
                 gsap.from('.' + chapter + '_text', {
                     scrollTrigger: {
                         trigger: '.' + chapter,
-                        toggleActions: 'restart reverse restart none',
+                        toggleActions: 'play none none none',
                     },
                     x: 50,
                     opacity: 0,
